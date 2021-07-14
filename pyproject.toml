@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "tsplawupdater"
+version = "0.0.1"
+description = "A script to keep TSP law dispatch files sync with TSP forum law archive"
+authors = ["watarinishin <watarichanno@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.25.1"
+beautifulsoup4 = "^4.9.3"
+toml = "^0.10.2"
+appdirs = "^1.4.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+pylint = "^2.9.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+tsplawupdater = "tsplawupdater.tsplawupdater:main"

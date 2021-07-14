@@ -1,0 +1,157 @@
+[general]
+dispatch_config_path = '~/tsp_dispatches/dispatch_config/laws.toml'
+template_dir_path = '~/tsp_dispatches/laws'
+dispatch_name_prefix = 'laws/'
+template_ext = '.txt'
+owner_nation = 'coalition_of_the_south_pacific'
+category = 'meta'
+subcategory = 'reference'
+std_template_path = '~/tsp_dispatches/laws/law_template.txt'
+
+[anchor_lookup]
+[anchor_lookup.subsection]
+match = '(?m)^([a-z])\. .+'
+anchor_link = '\g<1>'
+
+[anchor_lookup.section]
+match = '\((\d+)\) .+'
+anchor_link = 's\g<1>'
+
+[anchor_lookup.article]
+match = '(\w+)\. .+'
+anchor_link = 'a\g<1>'
+
+[bb_lookup]
+container = 'div[class="post_body scaleimages"]'
+ignore = ['div[class="float_right"]', 'div[class="post_meta"]']
+default_bb_tag = '[p]{text}[/p]'
+line_break_html_tag = 'br'
+
+[bb_lookup.tags]
+[bb_lookup.tags.bold]
+name ='span'
+attrs = {class = ['mycode_b'], style = 'font-weight: bold;'}
+bb_tag = '[b]{text}[/b]'
+
+[bb_lookup.tags.italic]
+name = 'span'
+attrs = {class = ['mycode_i'], style = 'font-style: italic;'}
+bb_tag = '[i]{text}[/i]'
+
+[bb_lookup.tags.align_center]
+name = 'div'
+attrs = {class = ['mycode_align'], style = 'text-align: center;'}
+bb_tag = '[align=center]{text}[/align]'
+
+[bb_lookup.tags.unordered_list]
+name = 'ul'
+attrs = {class = ['mycode_list']}
+bb_tag = '[list]{text}[/list]'
+
+[bb_lookup.tags.ordered_list]
+name = 'ol'
+attrs = {class = ['mycode_list'], type = '1'}
+bb_tag = '[list=1]{text}[/list]'
+
+[bb_lookup.tags.list_item]
+name = 'li'
+attrs = {}
+bb_tag = '[*_r]{text}'
+
+[bb_lookup.tags.quote]
+name = 'blockquote'
+attrs = {class = ['mycode_quote']}
+bb_tag = '[hr]{text}[/hr]'
+
+[bb_lookup.tags.cite]
+name = 'cite'
+attrs = {}
+bb_tag = '[i]{text}[/i][hr]'
+
+[bb_lookup.tags.strike]
+name = 'span'
+attrs = {class = ['mycode_s'], style = 'text-decoration: line-through;'}
+bb_tag = '[strike]{text}[/strike]'
+
+[bb_lookup.tags.red]
+name = 'span'
+attrs = {class = ['mycode_color'], style = 'color: #ff0000;'}
+bb_tag = '[color=ff0000]{text}[/color]'
+
+[bb_lookup.tags.green]
+name = 'span'
+attrs = {class = ['mycode_color'], style = 'color: #27AE60;'}
+bb_tag = '[color=27ae60]{text}[/color]'
+
+[laws]
+[laws.charter]
+title = 'The Charter of the South Pacific'
+url = 'https://tspforums.xyz/thread-4111.html'
+
+[laws.elections_act]
+title = 'The Elections Act - TSP'
+url = 'https://tspforums.xyz/thread-4112.html'
+
+[laws.legislative_procedure_act]
+title = 'Legislative Procedure Act - TSP'
+url = 'https://tspforums.xyz/thread-5083.html'
+
+[laws.legislator_committee_act]
+title = 'Legislator Committee Act - TSP'
+url = 'https://tspforums.xyz/thread-5792.html'
+
+[laws.proscription_act]
+title = 'Proscription Act - TSP'
+url = 'https://tspforums.xyz/thread-6204.html'
+
+[laws.border_control_act]
+title = 'Border Control Act - TSP'
+url = 'https://tspforums.xyz/thread-5578.html'
+
+[laws.criminal_code]
+title = 'Criminal Code - TSP'
+url = 'https://tspforums.xyz/thread-4114.html'
+
+[laws.cultural_act]
+title = 'Cultural Act - TSP'
+url = 'https://tspforums.xyz/thread-8259.html'
+
+[laws.judicial_act]
+title = 'Judicial Act - TSP'
+url = 'https://tspforums.xyz/thread-6064.html'
+
+[laws.law_standards_act]
+title = 'Law Standards Act - TSP'
+url = 'https://tspforums.xyz/thread-4960.html'
+
+[laws.military_code]
+title = 'Military Code - TSP'
+url = 'https://tspforums.xyz/thread-4115.html'
+
+[laws.political_parties_act]
+title = 'Political Parties Act - TSP'
+url = 'https://tspforums.xyz/thread-4562.html'
+
+[laws.regional_communications_act]
+title = 'Regional Communications Act - TSP'
+url = 'https://tspforums.xyz/thread-4542.html'
+
+[laws.regional_officers_act]
+title = 'Regional Officers Act - TSP'
+url = 'https://tspforums.xyz/thread-4118.html'
+
+[laws.sunshine_act]
+title = 'Sunshine Act - TSP'
+url = 'https://tspforums.xyz/thread-4117.html'
+
+[laws.times_act]
+title = 'Times Act - TSP'
+url = 'https://tspforums.xyz/thread-8879.html'
+
+[laws.treaties_act]
+title = 'Treaties Act - TSP'
+url = 'https://tspforums.xyz/thread-4566.html'
+
+[laws.whistleblower_protection_act]
+title = 'Whistleblower Protection Act - TSP'
+url = 'https://tspforums.xyz/thread-8608.html'
