@@ -23,7 +23,7 @@ anchor_link = 'a\g<1>'
 
 [bb_lookup]
 container = 'div[class="post_body scaleimages"]'
-ignore = ['div[class="float_right"]', 'div[class="post_meta"]']
+ignore = ['div[class="float_right"]', 'div[class="post_meta"]', 'div[class="signature scaleimages"]']
 default_bb_tag = '[p]{text}[/p]'
 line_break_html_tag = 'br'
 
@@ -61,7 +61,7 @@ bb_tag = '[*_r]{text}'
 [bb_lookup.tags.quote]
 name = 'blockquote'
 attrs = {class = ['mycode_quote']}
-bb_tag = '[hr]{text}[/hr]'
+bb_tag = '[hr]{text}[hr]'
 
 [bb_lookup.tags.cite]
 name = 'cite'
