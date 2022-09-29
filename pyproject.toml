@@ -11,6 +11,9 @@ requests = "^2.25.1"
 beautifulsoup4 = "^4.9.3"
 toml = "^0.10.2"
 appdirs = "^1.4.4"
+google-api-python-client = "^2.15.0"
+google-auth-httplib2 = "^0.1.0"
+google-auth-oauthlib = "^0.4.5"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.4"
